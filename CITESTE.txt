@@ -1,0 +1,23 @@
+PFP | Pump Fun Pup — website
+
+1) X si CA
+   Deschide index.html si editeaza blocul de la inceput:
+     window.PFP_CONFIG = {
+       x:  "https://x.com/contul-tau",
+       ca: "adresa-contractului"
+     };
+   Daca lasi o valoare goala, site-ul afiseaza "TBA".
+
+2) Publicare
+   Urca tot folderul (index.html + assets/ + favicon-*.png + apple-touch-icon.png)
+   pe orice hosting static: Netlify, Vercel, Cloudflare Pages, GitHub Pages.
+   Nu deschide index.html direct din folder (file://) pentru test; foloseste un server local,
+   de ex.: python3 -m http.server
+
+3) Imagini
+   assets/pfp/*.png         = fisierele originale, neschimbate (acestea se descarca)
+   assets/pfp/*-480.webp    = miniaturi
+   assets/pfp/*-1000.webp   = imaginea mare din scena
+   IMAGE-MAP.txt            = ce fisier incarcat corespunde fiecarui PFP
+
+4) Iconita din tab (favicon) = fata catelului original: favicon-64.png / favicon-32.png
